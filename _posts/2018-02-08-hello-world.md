@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Hello, World!"
 date: 2018-02-08 18:00:00 -0800
 categories: til
