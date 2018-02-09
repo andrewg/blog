@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
-title: Today I Learned
-description: A space to record new things I learn everyday.
-show_downloads: false
+highlighter: rouge
+url: http://andrewg.github.io
+lsi: false
+exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
