@@ -1,1 +1,4 @@
 theme: jekyll-theme-minimal
+title: Today I Learned
+description: A space to record new things I learn everyday.
+show_downloads: false
