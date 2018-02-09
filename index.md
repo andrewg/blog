@@ -2,4 +2,6 @@
 title: Today I Learned
 ---
 
-Test
+{% for post in site.posts %}
+- [{{ post.url }}]({{ post.title }})
+{% endfor %}
