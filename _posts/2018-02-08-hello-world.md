@@ -59,16 +59,16 @@ if there is only one such method satisfying the pointcut.
 
 | command | action |
 |:--------|:-------|
-| h       | left   |
-| j       | down   |
-| k       | up     |
-| l       | right  |
+| `h`     | left   |
+| `j`     | down   |
+| `k`     | up     |
+| `l`     | right  |
 
 ### Match to some character
 
 | command | example | description                                                    |
 |:--------|:--------|:---------------------------------------------------------------|
-| t       | dt      | Delete from the current position until the first instance of ) |
+| `t`     | `dt`    | Delete from the current position until the first instance of ) |
 
 ### Mark
 
