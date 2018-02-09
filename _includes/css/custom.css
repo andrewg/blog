@@ -9,6 +9,10 @@ table {
     font-size: 85%;
 }
 
+#home p {
+    font-size: 85%;
+}
+
 th, td {
     text-align: left;
     padding: 5px 10px;

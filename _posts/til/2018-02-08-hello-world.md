@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello, World!
-categories: til
+categories: dev til
 tags: lombok spring aspectj aop java vim intellij sql graph
 ---
 
