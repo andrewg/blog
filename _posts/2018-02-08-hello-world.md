@@ -5,27 +5,27 @@ categories: til
 tags: lombok spring aspectj aop java vim intellij sql graph
 ---
 
-This site will serve as a repository of notes for programming-related things I've learned each. I might not learn
-something new each day. I might forget to post. I might post inaccurate or plain wrong information. This will largely
-just be a mish-mash of notes so I can find them later on. **Reader beware.**
+This site will serve as a repository of notes for programming-related things I've learned each day. It will largely just
+be a mish-mash of notes so I can find them later on.
 
-Today I learned...
+I might not learn something new each day. I might forget to post. I might even post inaccurate or just plain wrong
+information.  **Reader beware.**
+
+Without further ado, today I learned...
 
 ## Lombok
 
-
-```java
+{% highlight java %}
 @AllArgsContructor(onConstructor=@__{@Autowired})
-```
-
+{% endhighlight %}
 
 The [Lombok](https://projectlombok.org/) [@AllArgsContructor](https://projectlombok.org/api/lombok/AllArgsConstructor.html)
-annotation provides a [onConstructor](https://projectlombok.org/api/lombok/AllArgsConstructor.html#onConstructor--)
-member which allows adding any annotation to the generated constructor (e.g. [Spring](https://spring.io/]'s
-[@Autowired|https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html).
+annotation provides an [onConstructor](https://projectlombok.org/api/lombok/AllArgsConstructor.html#onConstructor--)
+member which allows adding any annotation to the generated constructor (e.g. [Spring](https://spring.io/)'s
+[@Autowired](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html)).
 
-The documentation says that for JDK8 the syntax should follow `onConstructor_={@Autowired}`. However, I seemed to still
-need to define it using the (above) JDK7 syntax. I am sure I am missing something.
+The documentation says that for JDK8 the syntax should be `onConstructor_={@Autowired}`. However, I seemed to still
+need to define it using the (above) JDK7 syntax.
 
 ## AspectJ / Spring AOP
 
@@ -40,7 +40,7 @@ This can act as a shortcut for limiting the scope to a type.
 execution(* *.methodName(String, *))
 {% endhighlight %}
 
-A method that:
+This describes a method that:
 - returns anything
 - is in a class in any package
 - is named 'methodName'
@@ -55,33 +55,23 @@ void handle(JoinPoint joinPoint, SomeParamType result) {
 }
 {% endhighlight %}
 
-Combines the two above to match only on methods in the ExampleService class named 'methodName' with two parameters where
-the first one is a String. The 'result' parameter maps to the returning object from the method, and can be safely typed
-if there is only one such method satisfying the pointcut.
+This combines the two above to match only on methods in the ExampleService class named 'methodName' with two parameters
+where the first one is a String. The 'result' parameter maps to the returning object from the method, and can be safely
+typed if there is only one such method satisfying the pointcut.
 
 ## VIM / IdeaVim
 
 ### Navigation
 
-| command | action |
-|:--------|:-------|
-| `h`     | left   |
-| `j`     | down   |
-| `k`     | up     |
-| `l`     | right  |
-
-### Match to some character
-
-| command | example | description                                                    |
-|:--------|:--------|:---------------------------------------------------------------|
+| Command | Example | Description                                                    |
+|:-------:|:-------:|:---------------------------------------------------------------|
+| `h`     |         | Move left                                                      |
+| `j`     |         | Move down                                                      |
+| `k`     |         | Move up                                                        |
+| `l`     |         | Move right                                                     |
 | `t`     | `dt`    | Delete from the current position until the first instance of ) |
-
-### Mark
-
-| command | example | description                                               |
-|:--------|:--------|:----------------------------------------------------------|
-| `m`     | `ma`    | Marks the current position as 'a'                         |
-| `` ` `` | `` `a`` | Jumps the cursor to the previously marked position at 'a' |
+| `m`     | `ma`    | Marks the current position as 'a'                              |
+| `` ` `` | `` `a`` | Jumps the cursor to the previously marked position at 'a'      |
 
 ## Directed Acyclic Graphs in SQL
 

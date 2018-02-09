@@ -15,7 +15,7 @@ layout: default
   {{ content }}
 </div>
 
-{% if site.related_posts != null %}
+{% if site.related_posts.any? %}
 <div id="related">
   <h3>Related Posts</h3>
   <ul class="posts">
