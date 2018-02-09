@@ -1,4 +1,4 @@
 highlighter: rouge
-url: http://andrewg.github.io
+url: https://andrewg.github.io
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
