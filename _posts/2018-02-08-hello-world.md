@@ -5,22 +5,27 @@ categories: til
 tags: lombok spring aspectj aop java vim intellij sql graph
 ---
 
-Hello, this site will serve as a repository of notes for programming-related things I've learned each. I might not learn
+This site will serve as a repository of notes for programming-related things I've learned each. I might not learn
 something new each day. I might forget to post. I might post inaccurate or plain wrong information. This will largely
-just be a mish-mash of notes so I can find them later on. Reader beware.
+just be a mish-mash of notes so I can find them later on. **Reader beware.**
 
-# Things I've Learned
+Today I learned...
 
 ## Lombok
+
+
+```java
+@AllArgsContructor(onConstructor=@__{@Autowired})
+```
+
 
 The [Lombok](https://projectlombok.org/) [@AllArgsContructor](https://projectlombok.org/api/lombok/AllArgsConstructor.html)
 annotation provides a [onConstructor](https://projectlombok.org/api/lombok/AllArgsConstructor.html#onConstructor--)
 member which allows adding any annotation to the generated constructor (e.g. [Spring](https://spring.io/]'s
 [@Autowired|https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html).
 
-The documentation says that for JDK8 the syntax should follow `@AllArgsContructor(onConstructor_={@Autowired})`.
-However, I seemed to still need to define it using the JDK7 syntax (`@AllArgsContructor(onConstructor=@__{@Autowired})`).
-I'm likely missing something...
+The documentation says that for JDK8 the syntax should follow `onConstructor_={@Autowired}`. However, I seemed to still
+need to define it using the (above) JDK7 syntax. I am sure I am missing something.
 
 ## AspectJ / Spring AOP
 
@@ -83,7 +88,7 @@ if there is only one such method satisfying the pointcut.
 [This article](https://www.codeproject.com/Articles/22824/A-Model-to-Represent-Directed-Acyclic-Graphs-DAG-o) provides
 an interesting model for representing DAG's in SQL.
 
-# Links
+## Links
 
 * [AspectJ Cheat Sheet](https://blog.espenberntsen.net/2010/03/20/aspectj-cheat-sheet/)
 * [Pointcut Expressions Tutorial](http://www.baeldung.com/spring-aop-pointcut-tutorial)

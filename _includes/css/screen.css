@@ -120,19 +120,19 @@ nav h1, nav h2 {
   font-size: 13px;
 }
 
-#post pre {
+/* #post pre {
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 .4em;
   margin-bottom: 20px !important;
-}
+} */
 
 #post ul,
 #post ol {
   margin-left: 1.35em;
 }
 
-#post code {
+/* #post code {
   border: 1px solid #ddd;
   background-color: #eef;
   font-size: 85%;
@@ -141,7 +141,7 @@ nav h1, nav h2 {
 
 #post pre code {
   border: none;
-}
+} */
 
 .sidebar {
   padding-top: 25px;
