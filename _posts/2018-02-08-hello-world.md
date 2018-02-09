@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: post
 title: "Hello, World!"
+categories: blog
 ---
 
 Hello, this site will serve as a repository of notes for programming-related things I've learned each. I might not learn
@@ -11,10 +12,10 @@ just be a mish-mash of notes so I can find them later on. Reader beware.
 
 ## Lombok
 
-The [Lombok|https://projectlombok.org/] [@AllArgsContructor|https://projectlombok.org/api/lombok/AllArgsConstructor.html]
-annotation provides a [onConstructor|https://projectlombok.org/api/lombok/AllArgsConstructor.html#onConstructor--]
-member which allows adding any annotation to the generated constructor (e.g. [Spring|https://spring.io/]'s
-[@Autowired|https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html]).
+The [Lombok](https://projectlombok.org/) [@AllArgsContructor](https://projectlombok.org/api/lombok/AllArgsConstructor.html)
+annotation provides a [onConstructor](https://projectlombok.org/api/lombok/AllArgsConstructor.html#onConstructor--)
+member which allows adding any annotation to the generated constructor (e.g. [Spring](https://spring.io/]'s
+[@Autowired|https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html).
 
 The documentation says that for JDK8 the syntax should follow `@AllArgsContructor(onConstructor_={@Autowired})`.
 However, I seemed to still need to define it using the JDK7 syntax (`@AllArgsContructor(onConstructor=@__{@Autowired})`).
@@ -67,11 +68,11 @@ if there is only one such method satisfying the pointcut.
 
 ## Directed Acyclic Graphs in SQL
 
-[This article|https://www.codeproject.com/Articles/22824/A-Model-to-Represent-Directed-Acyclic-Graphs-DAG-o] provides
+[This article](https://www.codeproject.com/Articles/22824/A-Model-to-Represent-Directed-Acyclic-Graphs-DAG-o) provides
 an interesting model for representing DAG's in SQL.
 
 # Links
 
-* [AspectJ Cheat Sheet|https://blog.espenberntsen.net/2010/03/20/aspectj-cheat-sheet/]
-* [Pointcut Expressions Tutorial|http://www.baeldung.com/spring-aop-pointcut-tutorial]
-* [Directed Acyclic Graphs in SQL|https://www.codeproject.com/Articles/22824/A-Model-to-Represent-Directed-Acyclic-Graphs-DAG-o]
+* [AspectJ Cheat Sheet](https://blog.espenberntsen.net/2010/03/20/aspectj-cheat-sheet/)
+* [Pointcut Expressions Tutorial](http://www.baeldung.com/spring-aop-pointcut-tutorial)
+* [Directed Acyclic Graphs in SQL](https://www.codeproject.com/Articles/22824/A-Model-to-Represent-Directed-Acyclic-Graphs-DAG-o)
