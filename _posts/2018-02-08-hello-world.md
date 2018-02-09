@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hello, World!"
-categories: blog
+categories: til
 ---
 
 Hello, this site will serve as a repository of notes for programming-related things I've learned each. I might not learn
