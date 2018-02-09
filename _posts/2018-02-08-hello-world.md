@@ -75,7 +75,7 @@ if there is only one such method satisfying the pointcut.
 | command | example | description                                               |
 |:--------|:--------|:----------------------------------------------------------|
 | `m`     | `ma`    | Marks the current position as 'a'                         |
-| `\``    | `\`a`   | Jumps the cursor to the previously marked position at 'a' |
+| `````   | ```a``  | Jumps the cursor to the previously marked position at 'a' |
 
 ## Directed Acyclic Graphs in SQL
 
