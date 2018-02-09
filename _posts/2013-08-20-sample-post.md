@@ -3,6 +3,7 @@ layout: post
 title: Sample post
 categories:
 - blog
+published: false
 ---
 
 Tattooed roof party *vinyl* freegan single-origin coffee wayfarers tousled, umami yr 

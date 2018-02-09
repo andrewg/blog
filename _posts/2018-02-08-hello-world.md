@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "Hello, World!"
+layout: post
+title: Hello, World!
 categories: til
 tags: lombok spring aspectj aop java vim intellij sql graph
 ---
@@ -24,16 +24,16 @@ I'm likely missing something...
 
 ## AspectJ / Spring AOP
 
-```java
+{% highlight java %}
 @Pointcut("target(com.example.ExampleService)")
 void exampleService() {}
-```
+{% endhighlight %}
 
 This can act as a shortcut for limiting the scope to a type.
 
-```java
+{% highlight java %}
 execution(* *.methodName(String, *))
-```
+{% endhighlight %}
 
 A method that:
 - returns anything
@@ -42,13 +42,13 @@ A method that:
 - first param is a String
 - second param is anything
 
-```java
+{% highlight java %}
 @AfterReturning(value = "exampleService() && execution(* *.methodName(String, *)", returning "result")
 void handle(JoinPoint joinPoint, SomeParamType result) {
   String firstParam = (String) joinPoint.getArgs()[0];
   // handle param and result
 }
-```
+{% endhighlight %}
 
 Combines the two above to match only on methods in the ExampleService class named 'methodName' with two parameters where
 the first one is a String. The 'result' parameter maps to the returning object from the method, and can be safely typed
