@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello, World! Lombok &bull; AspectJ &bull; VIM
+title: Hello, World!
 categories: dev til
 tags: lombok spring aspectj aop java vim intellij sql graph
 ---
