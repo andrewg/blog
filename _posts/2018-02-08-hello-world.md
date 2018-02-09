@@ -2,6 +2,7 @@
 layout: default
 title: "Hello, World!"
 categories: til
+tags: lombok spring aspectj aop java vim intellij sql graph
 ---
 
 Hello, this site will serve as a repository of notes for programming-related things I've learned each. I might not learn
