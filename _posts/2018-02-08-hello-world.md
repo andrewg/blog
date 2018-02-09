@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Hello, World!"
 categories: til
 ---
@@ -22,12 +23,16 @@ I'm likely missing something...
 
 ## AspectJ / Spring AOP
 
-> @Pointcut("target(com.example.ExampleService)")
-> void exampleService() {}
+```java
+@Pointcut("target(com.example.ExampleService)")
+void exampleService() {}
+```
 
 This can act as a shortcut for limiting the scope to a type.
 
-> execution(* *.methodName(String, *))
+```java
+execution(* *.methodName(String, *))
+```
 
 A method that:
 - returns anything
@@ -36,11 +41,13 @@ A method that:
 - first param is a String
 - second param is anything
 
-> @AfterReturning(value = "exampleService() && execution(* *.methodName(String, *)", returning "result")
-> void handle(JoinPoint joinPoint, SomeParamType result) {
->   String firstParam = (String) joinPoint.getArgs()[0];
->   // handle param and result
-> }
+```java
+@AfterReturning(value = "exampleService() && execution(* *.methodName(String, *)", returning "result")
+void handle(JoinPoint joinPoint, SomeParamType result) {
+  String firstParam = (String) joinPoint.getArgs()[0];
+  // handle param and result
+}
+```
 
 Combines the two above to match only on methods in the ExampleService class named 'methodName' with two parameters where
 the first one is a String. The 'result' parameter maps to the returning object from the method, and can be safely typed
@@ -48,22 +55,27 @@ if there is only one such method satisfying the pointcut.
 
 ## VIM / IdeaVim
 
-* Navigation
-  * h (left)
-  * j (down)
-  * k (up)
-  * l (right)
-* Match to some character
-  * t
-    * E.g. dt)
-      * Delete from the current position until the first instance of )
-* Mark
-  * m
-    * E.g. ma
-      * Marks the current position as 'a'
-  * `
-    * E.g. `a
-      * Jumps the cursor to the previously marked position at 'a'
+### Navigation
+
+| command | action |
+|:--------|:-------|
+| h       | left   |
+| j       | down   |
+| k       | up     |
+| l       | right  |
+
+### Match to some character
+
+| command | example | description                                                    |
+|:--------|:--------|:---------------------------------------------------------------|
+| t       | dt      | Delete from the current position until the first instance of ) |
+
+### Mark
+
+| command | example | description                                               |
+|:--------|:--------|:----------------------------------------------------------|
+| m       | ma      | Marks the current position as 'a'                         |
+| `       | `a      | Jumps the cursor to the previously marked position at 'a' |
 
 ## Directed Acyclic Graphs in SQL
 
