@@ -3,6 +3,7 @@ layout: post
 title: "Hello, World!"
 date: 2018-02-08 18:00:00 -0800
 categories: til
+published: true
 ---
 
 Hello, this site will serve as a repository of notes for programming-related things I've learned each. I might not learn
