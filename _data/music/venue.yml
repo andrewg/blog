@@ -2,3 +2,5 @@ highline:
   name: The Highline
 neumos:
   name: Neumos
+venue:
+  name: VENUE

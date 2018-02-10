@@ -28,6 +28,8 @@ The documentation says that for JDK8 the syntax should be
 `onConstructor_={@Autowired}`. However, I seemed to still need to define it
 using the (above) JDK7 syntax.
 
+### Links
+
 * [Lombok](https://projectlombok.org/)
 * [@AllArgsContructor](https://projectlombok.org/api/lombok/AllArgsConstructor.html)
 * [onConstructor](https://projectlombok.org/api/lombok/AllArgsConstructor.html#onConstructor--)
@@ -67,6 +69,8 @@ named 'methodName' with two parameters where the first one is a String. The
 'result' parameter maps to the returning object from the method, and can be
 safely typed if there is only one such method satisfying the pointcut.
 
+### Links
+
 * [AspectJ Cheat Sheet](https://blog.espenberntsen.net/2010/03/20/aspectj-cheat-sheet/)
 * [Pointcut Expressions Tutorial](http://www.baeldung.com/spring-aop-pointcut-tutorial)
 
@@ -86,5 +90,7 @@ safely typed if there is only one such method satisfying the pointcut.
 
 Found an article providing an interesting interesting model for representing
 DAG's in SQL.
+
+### Links
 
 * [Directed Acyclic Graphs in SQL](https://www.codeproject.com/Articles/22824/A-Model-to-Represent-Directed-Acyclic-Graphs-DAG-o)
