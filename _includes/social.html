@@ -65,6 +65,24 @@
   </a>
   {% endif %}
 
+  {% if site.data.theme.social.bandcamp %}
+  <a title="{{ site.data.theme.name }} on Bandcamp" href="https://bandcamp.com/{{ site.data.theme.social.bandcamp }}">
+    <i class="fa fa-bandcamp"></i>
+  </a>
+  {% endif %}
+
+  {% if site.data.theme.social.goodreads %}
+  <a title="{{ site.data.theme.name }} on Goodreads" href="https://goodreads.com/{{ site.data.theme.social.goodreads }}">
+    <i class="fa fa-goodreads"></i>
+  </a>
+  {% endif %}
+
+  {% if site.data.theme.social.strava %}
+  <a title="{{ site.data.theme.name }} on Strava" href="https://www.strava.com/athletes/{{ site.data.theme.social.strava }}">
+    <i class="fa fa-goodreads"></i>
+  </a>
+  {% endif %}
+
   {% if site.data.theme.show_atom_feed %}
   <a title="Atom feed" id="atom" href="/atom.xml">
     <i class="fa fa-rss-square"></i>
