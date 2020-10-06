@@ -4,6 +4,15 @@ title: Home
 ---
 
 <div id="home">
-    <h2><i class="fas fa-book"></i> Currently Reading</h2>
+    <h2><i class="fas fa-headphones"></i> Music</h2>
+    <h3>Currently jamming to...</h3>
+    <div class="row">
+    {% include widgets/jamming.html %}
+    </div>
+
+    <h2><i class="fas fa-book"></i> Books</h2>
+    <h3>Currently reading...</h3>
+    <div class="row">
     {% include widgets/goodreads.html %}
+    </div>
 </div>

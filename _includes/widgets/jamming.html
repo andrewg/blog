@@ -1,0 +1,6 @@
+{% for jam in site.data.jams %}
+    {% capture album %}{{ jam.album }}{% endcapture %}
+    {% capture title %}{{ jam.title }}{% endcapture %}
+    {% capture url %}{{ jam.url }}{% endcapture %}
+    {% include jam.html album=album title=title url=url %}
+{% endfor %}
